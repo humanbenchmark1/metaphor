@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personality Test</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Discover Your Personality Type</h1>
+    <form id="quizForm">
+      <div class="question">
+        <p>Question 1: Do you prefer spending time alone or with others?</p>
+        <label><input type="radio" name="q1" value="introvert"> Alone</label>
+        <label><input type="radio" name="q1" value="extrovert"> With others</label>
+      </div>
+      
+      <div class="question">
+        <p>Question 2: Are you more detail-oriented or big-picture focused?</p>
+        <label><input type="radio" name="q2" value="detail"> Detail-Oriented</label>
+        <label><input type="radio" name="q2" value="big-picture"> Big-Picture</label>
+      </div>
+
+      <button type="button" onclick="calculateResult()">Submit</button>
+    </form>
+
+    <div id="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
